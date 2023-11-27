@@ -1,10 +1,11 @@
-class AudioAttachment(override val type: Audio) : Attachment {
+class AudioAttachment(override val type: String = "Audio", override val attachment: Audio) : Attachment {
+
 }
 
-class VideoAttachment(override val type: Video) : Attachment {
+class VideoAttachment(override val type: String = "Video", override val attachment: Video) : Attachment {
 }
 
-class PhotoAttachment(override val type: Photo) : Attachment {
+class PhotoAttachment(override val type: String = "Photo", override val attachment: Photo) : Attachment {
 }
 
 class Audio(

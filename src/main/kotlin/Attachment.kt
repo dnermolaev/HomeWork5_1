@@ -1,5 +1,6 @@
 interface Attachment {
-    val type: AttachmentType
+    val type: String
+    val attachment: AttachmentType
 }
 
 interface AttachmentType {
